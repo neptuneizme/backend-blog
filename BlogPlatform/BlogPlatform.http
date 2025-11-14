@@ -1,0 +1,13 @@
+@BlogPlatform_HostAddress = http://localhost:5248
+
+GET {{BlogPlatform_HostAddress}}/api/blog
+Accept: application/json
+
+###
+POST {{BlogPlatform_HostAddress}}/api/blog
+Content-Type: application/json
+
+{
+    "title": "New Blog Post",
+    "content": "This is the content of the new blog post."
+}
